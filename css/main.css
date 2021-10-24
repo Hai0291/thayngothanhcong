@@ -1,0 +1,241 @@
+/* Layout */
+#layout {
+    background: url("../img/mathbackground.jpg");
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#layout-cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.94);
+}
+
+/* Header */
+#header {
+    display:flex;
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--light-primary-color);
+    z-index: 3;
+}
+
+.content__text-header-icon {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.header__label {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.4rem;
+    color: var(--text-color);
+    line-height: calc(var(--header-height) - 1rem);
+    flex: 1;
+    text-align: center;
+}
+
+
+/* Content */
+#content {
+    position: absolute;
+    margin-top: var(--header-height);
+    /* background-color: var(--super-light-primary-color); */
+}
+
+.content__main {
+    display: flex;
+}
+
+.content__main-text {
+    flex: 1;
+    margin: 45px;
+}
+
+.content__text-mainheading {
+    font-size: 2.6rem;
+    color: var(--text-color);
+    letter-spacing: 0.3rem;
+    font-family: 'Nunito', sans-serif;
+    margin: 5px 0px 20px 50px;
+}
+
+.content__text-info {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.content__text-info-icon {
+    width: 70px;
+}
+
+.content__text-info-written {
+    font-size: 1.3rem;
+    color: var(--text-light-color);
+    margin: 20px 0px 5px 0px;
+}
+
+.content__text-info-writter {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+.content__text-info-date {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.content__text-subheading {
+    margin: 35px 0px 40px 0px;
+}
+
+.content__text-subheading-main {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-left: 45px;
+}
+
+.content__text-subheading-light {
+    font-size: 8rem;
+    color: #E7E6E6;
+    font-family: 'Playfair Display', serif;
+    margin-left: 20px;
+}
+
+.content__text-passage {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 2.6rem;
+    text-align: justify;
+}
+
+.content__text-passage::first-letter {
+    font-family: 'Noto Serif Display', serif;
+    float: left;
+    font-size: 8rem;
+    line-height: 6rem;
+    font-weight: bold;
+    margin-right: 9px;
+    color: var(--dark-primary-color);
+    text-shadow: var(--primary-color) .05em .05em;
+}
+
+.content__text-passage-first-letter {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.content__main-img {
+    width: 700px;
+    object-fit: cover;
+}
+
+.content__text-btn {
+    display: block;
+    width: 120px;
+    height: 50px;
+    font-size: 2rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    margin: 15px 0px;
+    text-decoration: none;
+    line-height: 4.5rem;
+    border-radius: 30px;
+    float: right;
+}
+
+.content__text-btn:hover {
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#content__mail {
+    margin: 150px 0px;
+    text-align: center;
+}
+
+.content__mail-first {
+    transform: rotate(-15deg);
+}
+
+.content__mail-second {
+    transform: rotate(4deg);
+    z-index: 1;
+}
+
+.content__mail-third {
+    transform: rotate(16deg);
+}
+
+.content__mail-envelop-first,
+.content__mail-envelop-second,
+.content__mail-envelop-third {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.content__mail-first,
+.content__mail-second,
+.content__mail-third {
+    position: relative;
+    width: 400px;
+    filter: brightness(95%);
+}
+
+.content__mail-first:hover,
+.content__mail-second:hover,
+.content__mail-third:hover {
+    z-index: 2;
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.content__end {
+    --text-height: 6rem;
+    font-size: var(--text-height);
+    line-height: var(--text-height);
+    color: var(--dark-primary-color);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+
+/* Footer */
+#footer {
+    width: 100%;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer__copyright {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.footer__support {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.footer__contact {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6rem;
+    padding-bottom: 5px;
+}
