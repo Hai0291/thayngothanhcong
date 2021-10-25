@@ -306,7 +306,7 @@ html {
     }
 
     .content__mail-first, .content__mail-second, .content__mail-third {
-        width: 180px;
+        width: 170px;
     }
 
     .content__text-mainheading {
@@ -314,3 +314,51 @@ html {
         letter-spacing: 0.1rem;
     }
 }
+
+/* iPhone 5 */
+/* @media (max-width: 20em) {
+    .header__label {
+        font-size: 2rem;
+    }
+
+    .content__text-mainheading {
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
+
+    .content__text-info-icon {
+        width: 50px;
+        object-fit: contain;
+    }
+
+    .content__text-info-written {
+        margin-top: 6px;
+    }
+
+    .content__text-info-date {
+        font-size: 1.1rem;
+    }
+
+    .content__text-info-writter {
+        font-size: 1rem;
+    }
+
+    .content__text-subheading-main {
+        font-size: 2rem;
+    }
+
+    .content__text-passage {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .content__text-passage::first-letter {
+        font-size: 7rem;
+        line-height: 5rem;
+    }
+
+    .content__mail-first, .content__mail-second, .content__mail-third {
+        width: 150px;
+    }
+} */
