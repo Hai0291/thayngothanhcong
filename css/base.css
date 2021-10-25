@@ -164,6 +164,22 @@ html {
     .content__text-btn-responsive {
         display: block;
     }
+
+    .modal-container {
+        padding-top: 190px;
+    }
+
+    .modal-container-icon {
+        top: 175px;
+    }
+
+    .modal-container__psg {
+        top: 304px;
+    }
+
+    .modal-container-info.content__text-info {
+        top: 215px;
+    }
 }
 
 /* Mobile */
