@@ -295,6 +295,10 @@ html {
 
 /* Mobile Mini */
 @media (max-width: 23.4375em) {
+    .content__main-img {
+        width: 360px;
+    }
+
     .modal-container__psg {
         font-size: var(--font-size-container__psg-mini-mobile);
         line-height: var(--line-height-container__psg-mini-mobile);
@@ -316,7 +320,11 @@ html {
 }
 
 /* iPhone 5 */
-/* @media (max-width: 20em) {
+@media (max-width: 20em) {
+    .content__main-img {
+        width: 280px;
+    }
+
     .header__label {
         font-size: 2rem;
     }
@@ -361,4 +369,38 @@ html {
     .content__mail-first, .content__mail-second, .content__mail-third {
         width: 150px;
     }
-} */
+
+    .modal-container__psg {
+        top: 233px;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .modal-container__psg::first-letter {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .modal-container-icon {
+        font-size: 3.5rem;
+    }
+
+    .content__text-modal-written {
+        font-size: var(--font-size-container__psg-mini-mobile);
+        margin: 0px;
+    }
+
+    .content__text-modal-icon {
+        margin-top: -6px;
+        width: 45px;
+    }
+
+    .content__text-modal-writter {
+        font-size: calc(var(--font-size-container__psg-mini-mobile) - 1px);
+        width: 200px;
+    }
+
+    .content__text-modal-date {
+        font-size: var(--font-size-container__psg-mini-mobile);
+    }
+}
