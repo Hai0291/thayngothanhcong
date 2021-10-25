@@ -1,3 +1,4 @@
+/* Variable */
 :root {
     --white-color: #fff;
     --primary-color: #E784C6;
@@ -9,6 +10,8 @@
     --super-light-primary-color: #FCF9FC;
 }
 
+
+/* Shared */
 * {
     box-sizing: inherit;
 }
@@ -27,6 +30,7 @@ html {
 }
 
 
+/* Modal */
 .modal__1,
 .modal__2,
 .modal__3 {
@@ -61,10 +65,10 @@ html {
 
 .modal-container__psg {
     position: absolute;
-    width: 380px;
+    width: 410px;
     text-align: justify;
     top: 204px;
-    right: 98px;
+    right: 85px;
     font-size: 1.4rem;
     color: var(--text-color);
     line-height: 2.2rem;
@@ -109,4 +113,81 @@ html {
     to {
         opacity: 1;
     }
+}
+
+/* Responsive */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em) {
+    .content__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content__main-text {
+        order: 2;
+    }
+
+    .content__main-img {
+        order: 1;
+    }
+
+    .content__mail-first,
+    .content__mail-second, 
+    .content__mail-third {
+        width: 350px;
+    }
+
+    .content__end {
+        font-size: 5rem;
+    }
+
+    .content__text-btn {
+        display: none;
+    }
+
+    #content__mail {
+        margin: 120px 0px;
+    }
+
+    .modal-container {
+        padding-left: 50px;
+    }
+
+    .content__mail-envelop-third {
+        margin-left: 80px;
+    }
+
+    .content__end {
+        margin-bottom: 90px;
+    }
+
+    .content__text-btn-responsive {
+        display: block;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .content__mail-first,
+    .content__mail-second, 
+    .content__mail-third  {
+        width: 250px;
+    }
+
+    #content__mail {
+        margin: 100px 0px;
+    }
+
+    .content__end {
+        margin-bottom: 80px;
+    }
+
+    .content__mail-third {
+        transform: rotate(12deg);
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
 }
