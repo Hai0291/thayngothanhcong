@@ -1,5 +1,10 @@
 /* Variable */
 :root {
+    --width-mail: 550px;
+    --letter-space-pc: 130px;
+    --letter-space-non-pc: 110px;
+    --font-size-container__psg-mini-mobile: 0.9rem;
+    --line-height-container__psg-mini-mobile: 1.2rem;
     --white-color: #fff;
     --primary-color: #E784C6;
     --light-primary-color: #FFB6FA;
@@ -65,7 +70,8 @@ html {
 
 .modal-container__psg {
     position: absolute;
-    width: 410px;
+    width: calc(var(--width-mail) - var(--letter-space-pc));
+    max-width: calc(100% - 36px - var(--letter-space-non-pc));
     text-align: justify;
     top: 204px;
     right: 85px;
@@ -287,109 +293,24 @@ html {
 
 }
 
-/* iPhone 6,7,8 */
-@media (min-width: 23.375em) and (max-width: 25.8125em) {
+/* Mobile Mini */
+@media (max-width: 23.4375em) {
+    .modal-container__psg {
+        font-size: var(--font-size-container__psg-mini-mobile);
+        line-height: var(--line-height-container__psg-mini-mobile);
+    }
+
+    .modal-container__psg::first-letter {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .content__mail-first, .content__mail-second, .content__mail-third {
+        width: 180px;
+    }
+
     .content__text-mainheading {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         letter-spacing: 0.1rem;
-    }
-
-    .content__mail-first,
-    .content__mail-second,
-    .content__mail-third {
-        width: 170px;
-    }
-
-    .modal-container__psg {
-        top: 250px;
-        width: 235px;
-        font-size: 0.9rem;
-        line-height: 1.3rem; 
-    }
-}
-
-@media (width: 64em) {
-    .content__main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content__main-text {
-        order: 2;
-    }
-
-    .content__main-img {
-        order: 1;
-    }
-
-    .content__main-img {
-        width: 850px;
-    }
-
-    .content__text-mainheading {
-        margin-left: 208px;
-    }
-
-    .modal-container {
-        margin-top: 200px;
-        margin-left: 80px;
-    }
-
-    .modal-container-img {
-        width: 620px;
-    }
-
-    .modal-container-icon {
-        color: var(--light-primary-color);
-    }
-
-    .modal-container-info.content__text-info {
-        top: 100px;
-        right: 310px;
-    }
-
-    .modal-container__psg {
-        width: 410px;
-        top: 200px;
-        right: 118px;
-        font-size: 1.6rem;
-        line-height: 2.5rem;
-    }
-
-    .modal-container__psg::first-letter {
-        font-size: 7rem;
-        line-height: 7rem;
-    }
-}
-
-@media (min-width: 33.75em) and (max-width: 37.5em) {
-    .content__main-img {
-        width: 440px;
-    }
-
-    .content__text-mainheading {
-        font-size: 2rem;
-        letter-spacing: 0.4rem;
-    }
-
-    .modal-container-info.content__text-info {
-        top: 197px;
-        left: 90px;
-    }
-
-    .content__text-modal-icon {
-        margin-top: -3px;
-    }
-
-    .modal-container__psg {
-        left: 98px;
-        width: 358px;
-        font-size: 1.4rem;
-        line-height: 2rem;
-    }
-
-    .modal-container__psg::first-letter {
-        font-size: 6rem;
-        line-height: 6rem;
     }
 }
