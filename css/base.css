@@ -432,3 +432,17 @@ html {
         font-size: var(--font-size-container__psg-mini-mobile);
     }
 }
+
+/* iPad Pro */
+@media (width: 64em) {
+    .content__main {
+        flex-direction: column;
+    }
+}
+
+/* iPad Mini */
+@media (min-width: 33.75em) and (max-width: 37.5em) {
+    .modal-container-img {
+        width: 360px;
+    }
+}
