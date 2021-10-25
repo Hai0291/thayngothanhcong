@@ -167,6 +167,7 @@
     line-height: 4.5rem;
     border-radius: 3px;
     float: right;
+    margin-top: 10px;
 }
 
 .content__text-btn:hover {
@@ -253,3 +254,4 @@
     line-height: 1.6rem;
     padding-bottom: 5px;
 }
+

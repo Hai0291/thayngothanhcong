@@ -184,10 +184,93 @@ html {
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+
+    /* Header */
+    .header__label {
+        font-size: 2.4rem;
+    }
+
+    .content__text-header-icon {
+        display: none;
+    }
+
+    /* Content */
+    /* IMG */
+    .content__main-img {
+        width: 375px;
+    }
+
+    /* Text */
+    .content__text-passage {
+        font-size: 1.4rem;
+    }
+
+    .content__text-mainheading {
+        font-size: 1.6rem;
+        margin: 0px;
+        letter-spacing: 0.2rem;
+    }
+
+    .content__text-subheading-main {
+        font-size: 2.5rem;
+        margin-left: 30px;
+    }
+
+    .content__text-subheading-light {
+        margin-left: 5px;
+    }
+
+    /* Modal */
+    .modal-container-icon {
+        right: 0px;
+        font-size: 4.5rem;
+        color: var(--light-primary-color);
+    }
+
+    .modal-container-info.content__text-info {
+        top: 187px;
+        left: 70px;
+    }
+
+    .content__text-modal-writter {
+        margin: 0px;
+        font-size: 0.9rem;
+    }
+
+    .content__text-modal-date,
+    .content__text-modal-written {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .content__text-modal-icon {
+        width: 40px;
+        margin-top: 12px;
+    }
+
+    .modal-container__psg {
+        top: 252px;
+        left: 80px;
+        width: 270px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .modal-container__psg::first-letter {
+        font-size: 4rem;
+        line-height: 4rem;
+
+    }
+
+    /* Letter */
     .content__mail-first,
     .content__mail-second, 
     .content__mail-third  {
-        width: 250px;
+        width: 190px;
+    }
+
+    .content__mail-first {
+        margin-left: 8px;
     }
 
     #content__mail {
@@ -201,9 +284,112 @@ html {
     .content__mail-third {
         transform: rotate(12deg);
     }
+
 }
 
-/* Tablet */
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
+/* iPhone 6,7,8 */
+@media (min-width: 23.375em) and (max-width: 25.8125em) {
+    .content__text-mainheading {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
 
+    .content__mail-first,
+    .content__mail-second,
+    .content__mail-third {
+        width: 170px;
+    }
+
+    .modal-container__psg {
+        top: 250px;
+        width: 235px;
+        font-size: 0.9rem;
+        line-height: 1.3rem; 
+    }
+}
+
+@media (width: 64em) {
+    .content__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content__main-text {
+        order: 2;
+    }
+
+    .content__main-img {
+        order: 1;
+    }
+
+    .content__main-img {
+        width: 850px;
+    }
+
+    .content__text-mainheading {
+        margin-left: 208px;
+    }
+
+    .modal-container {
+        margin-top: 200px;
+        margin-left: 80px;
+    }
+
+    .modal-container-img {
+        width: 620px;
+    }
+
+    .modal-container-icon {
+        color: var(--light-primary-color);
+    }
+
+    .modal-container-info.content__text-info {
+        top: 100px;
+        right: 310px;
+    }
+
+    .modal-container__psg {
+        width: 410px;
+        top: 200px;
+        right: 118px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .modal-container__psg::first-letter {
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+}
+
+@media (min-width: 33.75em) and (max-width: 37.5em) {
+    .content__main-img {
+        width: 440px;
+    }
+
+    .content__text-mainheading {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .modal-container-info.content__text-info {
+        top: 197px;
+        left: 90px;
+    }
+
+    .content__text-modal-icon {
+        margin-top: -3px;
+    }
+
+    .modal-container__psg {
+        left: 98px;
+        width: 358px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .modal-container__psg::first-letter {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
 }
