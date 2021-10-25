@@ -295,6 +295,10 @@ html {
 
 /* Mobile Mini */
 @media (max-width: 23.4375em) {
+    .content__text-info-writter {
+        font-size: 1.1rem;
+    }
+
     .header__label {
         font-size: 2.2rem;
     }
