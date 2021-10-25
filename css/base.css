@@ -329,6 +329,22 @@ html {
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
     }
+    
+    .content__text-info-writter {
+        width: 200px;
+    }
+
+    .content__text-modal-icon {
+        margin-top: -2px;
+    }
+
+    .modal-container__psg {
+        top: 238px;
+    }
+
+    .modal-container-icon {
+        font-size: 3.5rem;
+    }
 }
 
 /* iPhone 5 */
