@@ -138,6 +138,7 @@
 .content__main-img {
     width: 700px;
     object-fit: cover;
+    margin: auto;
 }
 
 .content__text-btn {
