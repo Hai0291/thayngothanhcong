@@ -64,6 +64,7 @@
     letter-spacing: 0.3rem;
     font-family: 'Nunito', sans-serif;
     margin: 5px 0px 20px 50px;
+    text-align: center;
 }
 
 .content__text-info {
@@ -225,7 +226,7 @@
     color: var(--dark-primary-color);
     font-family: 'Lobster', cursive;
     text-align: center;
-    margin-bottom: 110px;
+    margin: 0px 8px 110px 10px;
 }
 
 
