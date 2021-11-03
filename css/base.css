@@ -186,6 +186,16 @@ html {
     .modal-container-info.content__text-info {
         top: 215px;
     }
+
+    .seemore {
+        margin-left: 10vw;
+        border: none;
+    }
+
+    .more-qr__img {
+        width: 175px;
+        margin-left: 0;
+    }
 }
 
 /* Mobile */
@@ -291,6 +301,19 @@ html {
         transform: rotate(12deg);
     }
 
+    .seemore-link {
+        margin: 25px 40px;
+    }
+
+    .more-qr__img {
+        width: 80px;
+        margin: 0;
+    }
+
+    .seemore-text {
+        margin-left: 20px;
+    }
+
 }
 
 /* Mobile Mini */
@@ -344,6 +367,11 @@ html {
 
     .modal-container-icon {
         font-size: 3.5rem;
+    }
+
+    .seemore {
+        margin-left: 3vw;
+        border: none;
     }
 }
 
@@ -431,6 +459,10 @@ html {
     .content__text-modal-date {
         font-size: var(--font-size-container__psg-mini-mobile);
     }
+
+    .more-qr__img {
+        width: 60px;
+    }
 }
 
 /* iPad Pro */
@@ -438,11 +470,23 @@ html {
     .content__main {
         flex-direction: column;
     }
+
+    .seemore {
+        margin-left: 8vw;
+    }
 }
 
 /* iPad Mini */
 @media (min-width: 33.75em) and (max-width: 37.5em) {
     .modal-container-img {
         width: 360px;
+    }
+
+    .seemore {
+        margin-left: 15vw;
+    }
+
+    .more-qr__img {
+        width: 115px;
     }
 }
